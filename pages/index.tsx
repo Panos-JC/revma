@@ -143,7 +143,14 @@ export default function Home() {
           <Typography variant="h4" className={classes.sectionTitle}>
             Άλλαξε πάροχο ρεύματος και αερίου σε 3 απλά βήματα
           </Typography>
-          <Grid container spacing={2}>
+          <Grid
+            container
+            spacing={2}
+            style={{
+              margin: 0,
+              width: "100%",
+            }}
+          >
             <Grid item xs={12} md={4}>
               <DisplayCard
                 src="/notes.png"
