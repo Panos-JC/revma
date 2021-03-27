@@ -38,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
   jumbatron: {
     height: 500,
     backgroundImage:
-      'linear-gradient(0deg, rgba(50,61,119,0.8) 16%, rgba(188,17,24,0.5) 100%),url("https://images.pexels.com/photos/1292464/pexels-photo-1292464.jpeg")',
+      "linear-gradient(-45deg, rgba(50,61,119,1) 16%, rgba(188,17,24,1) 100%)",
     // backgroundPosition: "center center",
     backgroundRepeat: "no-repeat",
-    backgroundSize: "cover",
+    backgroundSize: "400% 400%",
     animation: "$gradient 15s ease infinite",
   },
   "@keyframes gradient": {
@@ -66,6 +66,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     [theme.breakpoints.down("md")]: {
       margin: "20px 0 20px 0",
+    },
+    [theme.breakpoints.down("xs")]: {
+      margin: 0,
+      padding: "50px 25px 50px 25px",
     },
   },
   headings: {
